@@ -15,12 +15,11 @@
 }
 
 .site-title {
-    // font-size: 18px;
-    line-height: $base-line-height;
+    // font-size:   18px;
+    line-height:    $base-line-height;
     letter-spacing: -1px;
-    margin-bottom: 0;
-    float: left;
-    font-weight: bold;
+    margin-bottom:  0;
+    float:          left;
     &,
     &:visited {
         color: $text-color;
@@ -46,22 +45,22 @@
     }
 
     @include media-query($on-palm) {
-        position: absolute;
-        top: 9px;
-        right: 30px;
+        position:         absolute;
+        top:              9px;
+        right:            30px;
         background-color: $background-color;
-        border: 1px solid $grey-color-light;
-        border-radius: 5px;
-        text-align: right;
+        border:           1px solid $grey-color-light;
+        border-radius:    5px;
+        text-align:       right;
 
         .menu-icon {
-            display: block;
-            float: right;
-            width: 36px;
-            height: 26px;
+            display:     block;
+            float:       right;
+            width:       36px;
+            height:      26px;
             line-height: 0;
             padding-top: 10px;
-            text-align: center;
+            text-align:  center;
 
             > svg {
                 width: 18px;
