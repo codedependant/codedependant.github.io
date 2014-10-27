@@ -1,9 +1,12 @@
 ---
-layout: page
+layout: default
 title: Posts
 permalink: /posts/
 ---
 
+<header class="post-header">
+  <h1 class="post-title">{{ page.title }}</h1>
+</header>
 <ul class="post-list">
   {% for post in site.posts %}
     <li>

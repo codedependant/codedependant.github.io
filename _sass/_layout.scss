@@ -23,7 +23,7 @@
     font-weight: bold;
     &,
     &:visited {
-        color: $grey-color-dark;
+        color: $text-color;
     }
 }
 
@@ -115,7 +115,11 @@
 .footer-image {
     border-radius: 2px;
 }
-
+.footer-text
+{
+    margin: 0;
+    font-size: 14px;
+}
 .contact-list,
 .social-media-list {
     list-style: none;
@@ -236,6 +240,7 @@
 }
 
 .post-content {
+    font-family: 'Lato';
     margin-bottom: $spacing-unit;
 
     h2 {
