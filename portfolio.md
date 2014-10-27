@@ -1,11 +1,14 @@
 ---
-layout: page
+layout: default
 title: Portfolio
 permalink: /portfolio/
 ---
+<header class="post-header">
+  <h1 class="post-title">{{ page.title }}</h1>
+</header>
 
-This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](http://jekyllrb.com/)
+I've been lucky enough to work with some very talented engineers and designers.
 
-You can find the source code for the Jekyll new theme at: [github.com/jglovier/jekyll-new](https://github.com/jglovier/jekyll-new)
+<!-- For 7 years I worked at Internet Solutions, building large scale web applications that allowed corperate clients throughout Africa manage ICT infrastructure. -->
 
-You can find the source code for Jekyll at [github.com/jekyll/jekyll](https://github.com/jekyll/jekyll)
+Currently I work at [Meyer Miller Smith](http://www.meyermillersmith.com/){:target="_blank"}, one of Europes' oldest and most awarded digital design studios. We're building building beautifuly crafted digital experiences ranging from [video platforms](http://zuio.tv/){:target="_blank"} for Axel Springer to HTML5 games for Redbull.

@@ -157,10 +157,29 @@ pre {
 
 
 a{
-    color: indianred;
+    color: $accent-color;
     &:visited
     {
-        color: indianred;
+        color: $accent-color;
+    }
+}
+
+[data-tooltip]{
+    position: relative;
+    &:after {
+        opacity: 0;
+        content: attr(data-tooltip);
+        position: absolute;
+        top: 0;
+        left: 150%;
+        width: 240px;
+        color: $accent-color;
+    }
+    &:hover {
+        &:after {
+            opacity: 1;
+            transition: 1s opacity;
+        }
     }
 }
 

@@ -101,7 +101,8 @@
     width: 100%;
 
     .wrapper {
-        padding: $spacing-unit 0;
+        padding-top: $spacing-unit;
+        padding-bottom: $spacing-unit;
         border-top: 1px solid $grey-color-light;
     }
 }
@@ -223,7 +224,7 @@
 
 .post-title {
     font-size: 61px;
-    margin-bottom: 25px;
+    margin-bottom: 50px;
     letter-spacing: -1px;
     line-height: 1.2;
 
