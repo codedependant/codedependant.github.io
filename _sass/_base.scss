@@ -34,6 +34,11 @@ body {
     margin-bottom: 167px;
 }
 
+@include media-query($on-palm) {
+    body {
+        margin-bottom: 240px;
+    }
+}
 
 
 /**
