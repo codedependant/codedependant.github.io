@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Welcome to Jekyll!"
+title:  "Building useful things, with awesome people."
 date:   2014-10-27 12:01:02
 categories: jekyll update
 ---

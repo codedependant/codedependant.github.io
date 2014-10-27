@@ -1,11 +1,21 @@
 ---
 layout: default
+title: Home
+permalink: /
 ---
 
 <div class="home">
 
-  <h1 class="page-heading">Posts</h1>
+  <header class="page-header">
+    <!-- <p class="post-meta">{{ page.date | date: "%b %-d, %Y" }}{% if page.author %} • {{ page.author }}{% endif %}{% if page.meta %} • {{ page.meta }}{% endif %}</p> -->
+    <h1 class="post-title">Building useful things with awesome people.</h1>
+  </header>
 
+  <div class="post-intro">
+  Hey, my name is <a href="#">Chè Nxusani</a>. I'm a software developer building applications for the web. I live in Berlin, Germany working as a senior frontend developer at <a href="http://meyermillersmith.com">Meyer Miller Smith</a>. I'm pretty active on <a href="http://codepen.io/code_dependant">Codepen</a>, experimenting with interaction design, pushing the limits of CSS; HTML and Javascript. Feel free to <a href="http://www.twitter.com/code_dependant">say hi</a>.
+  </div>
+  <!-- <hr> -->
+  <h1 class="page-heading">Posts</h1>
   <ul class="post-list">
     {% for post in site.posts %}
       <li>
@@ -18,6 +28,6 @@ layout: default
     {% endfor %}
   </ul>
 
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
+  <!-- <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p> -->
 
 </div>
