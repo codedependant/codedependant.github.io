@@ -11,8 +11,14 @@ permalink: /
     <h1 class="post-title">Building useful things with awesome people.</h1>
   </header>
 
+  <svg style="display: none;">
+  <symbol id="sound-icon" viewBox="0 0 32 32">
+    <path d="M22.485 25.985c-0.384 0-0.768-0.146-1.061-0.439-0.586-0.586-0.586-1.535 0-2.121 4.094-4.094 4.094-10.755 0-14.849-0.586-0.586-0.586-1.536 0-2.121s1.536-0.586 2.121 0c2.55 2.55 3.954 5.94 3.954 9.546s-1.404 6.996-3.954 9.546c-0.293 0.293-0.677 0.439-1.061 0.439zM17.157 23.157c-0.384 0-0.768-0.146-1.061-0.439-0.586-0.586-0.586-1.535 0-2.121 2.534-2.534 2.534-6.658 0-9.192-0.586-0.586-0.586-1.536 0-2.121s1.535-0.586 2.121 0c3.704 3.704 3.704 9.731 0 13.435-0.293 0.293-0.677 0.439-1.061 0.439zM12.542 2.458c0.802-0.802 1.458-0.53 1.458 0.604v25.875c0 1.134-0.656 1.406-1.458 0.604l-7.542-7.542h-5v-12h5l7.542-7.542z" fill="currentColor"></path>
+  </symbol>
+  </svg>
+
   <div class="post-intro">
-  Hey, my name is <a href="#">Chè Nxusani</a>. I'm a software developer building applications for the web. I live in Berlin, Germany working as a senior frontend developer at <a href="http://meyermillersmith.com" target="_blank">Meyer Miller Smith</a>. I'm pretty active on <a href="http://codepen.io/code_dependant" target="_blank">Codepen</a>, experimenting with interaction design, pushing the limits of CSS; HTML and Javascript. Feel free to <a href="http://www.twitter.com/code_dependant" target="_blank">say hi</a>.
+  Hey, my name is <a href="#" onclick='document.querySelector("#pronunciation-audio").play(); return false;' onmouseover='document.querySelector("#pronunciation-audio").play()' onmouseout='document.querySelector("#pronunciation-audio").pause(); document.querySelector("#pronunciation-audio").currentTime=0; '>Chè Nxusani <svg width="16" height="16" viewBox="0 0 32 32"><use xlink:href="#sound-icon"></use></svg></a>. I'm a software developer building applications for the web. I live in Berlin, Germany working as a senior frontend developer at <a href="http://meyermillersmith.com" target="_blank">Meyer Miller Smith</a>. I'm pretty active on <a href="http://codepen.io/code_dependant" target="_blank">Codepen</a>, experimenting with interaction design, pushing the limits of CSS; HTML and Javascript. Feel free to <a href="http://www.twitter.com/code_dependant" target="_blank">say hi</a>.
   </div>
   <!-- <hr> -->
   <h1 class="page-heading">Posts</h1>
@@ -31,3 +37,12 @@ permalink: /
   <!-- <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p> -->
 
 </div>
+
+<audio id="pronunciation-audio" preload="auto">
+  <!-- <source src="horse.ogg" type="audio/ogg"> -->
+  <source src="/sounds/sound.wav" type="audio/wav">
+</audio>
+
+
+
+

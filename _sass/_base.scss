@@ -172,13 +172,13 @@ a{
         position: absolute;
         top: 0;
         left: 150%;
-        width: 240px;
+        width: 150px;
         color: $accent-color;
     }
     &:hover {
         &:after {
             opacity: 1;
-            transition: 1s opacity;
+            transition: .6s opacity;
         }
     }
 }
