@@ -46,7 +46,7 @@
 
     @include media-query($on-palm) {
         position:         absolute;
-        top:              18px;
+        top:              22px;
         right:            30px;
         background-color: $background-color;
         border:           1px solid $grey-color-light;
@@ -57,7 +57,7 @@
             display:     block;
             float:       right;
             width:       36px;
-            height:      26px;
+            height:      34px;
             line-height: 0;
             padding-top: 10px;
             text-align:  center;
@@ -99,7 +99,6 @@
     position: absolute;
     bottom: 0;
     width: 100%;
-
     .wrapper {
         padding-top: $spacing-unit;
         padding-bottom: $spacing-unit;
