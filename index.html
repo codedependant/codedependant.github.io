@@ -18,10 +18,21 @@ permalink: /
   </svg>
 
   <div class="post-intro">
-  Hey, my name is <a href="#" onclick='document.querySelector("#pronunciation-audio").play(); return false;' onmouseover='document.querySelector("#pronunciation-audio").play()' onmouseout='document.querySelector("#pronunciation-audio").pause(); document.querySelector("#pronunciation-audio").currentTime=0; '>Chè Nxusani <svg width="16" height="16" viewBox="0 0 32 32"><use xlink:href="#sound-icon"></use></svg></a>. I'm a software developer building applications for the web. I live in Berlin, Germany working as a senior frontend developer at <a href="http://meyermillersmith.com" target="_blank">Meyer Miller Smith</a>. I'm pretty active on <a href="http://codepen.io/code_dependant" target="_blank">Codepen</a>, experimenting with interaction design, pushing the limits of CSS; HTML and Javascript. Feel free to <a href="http://www.twitter.com/code_dependant" target="_blank">say hi</a>.
+  <p>
+    Hey, my name is <a href="#" onclick='document.querySelector("#pronunciation-audio").play(); return false;' onmouseover='document.querySelector("#pronunciation-audio").play()' onmouseout='document.querySelector("#pronunciation-audio").pause(); document.querySelector("#pronunciation-audio").currentTime=0; '>Chè Nxusani <svg width="16" height="16" viewBox="0 0 32 32"><use xlink:href="#sound-icon"></use></svg></a>. I'm a software developer building applications for the web. I live in Berlin, Germany working as a senior frontend developer at <a href="http://meyermillersmith.com" target="_blank">Meyer Miller Smith</a>. 
+  </p>
+  <p>I specialize in frontend application architecture, having successfully built several large, scalable, enterprise grade web applications.</p>
+  <p>
+    I'm also pretty active on <a href="http://codepen.io/code_dependant" target="_blank">Codepen</a>, experimenting with interaction design, pushing the limits of CSS; HTML and Javascript.
+  </p>
+  <!-- <p>I also write about things I've learned in the industry and life in general.</p> -->
+  <p>
+    I'm super friendly, feel free to <a href="http://www.twitter.com/code_dependant" target="_blank">say hi</a> anytime.
+  </p>
+
   </div>
 
-  <h1 class="page-heading">Latest Post</h1>
+<!--   <h1 class="page-heading">Latest Post</h1>
   <ul class="post-list">
     {% for post in site.posts %}
       <li>
@@ -37,16 +48,14 @@ permalink: /
   <ul class="post-list">
     {% for project in site.data.projects %}
       <li>
-        <!-- <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span> -->
-
-        <h2 style="margin-bottom: 0;">
-          <a class="post-link" href="{{ project.url | prepend: site.baseurl }}">{{ project.name }}</a>
+        <h2>
+          <a class="post-link" href="{{ project.url }}">{{ project.name }}</a>
         </h2>
         <span>{{project.description}}</span>
       </li>
     {% endfor %}
   </ul>
-
+ -->
   <!-- <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p> -->
 
 </div>
