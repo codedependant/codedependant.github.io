@@ -222,10 +222,11 @@
 }
 
 .post-title {
-    font-size: 61px;
-    margin-bottom: 50px;
-    letter-spacing: -1px;
-    line-height: 1.2;
+    font-size:      61px;
+    margin-bottom:  50px;
+    letter-spacing: -2px;
+    word-spacing:   2px;
+    line-height:    1.2;
 
 
     @include media-query($on-laptop) {
