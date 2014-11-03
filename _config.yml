@@ -11,3 +11,6 @@ codepen_username:  code_dependant
 
 # Build settings
 markdown: kramdown
+
+gems:
+  - jekyll-sitemap
