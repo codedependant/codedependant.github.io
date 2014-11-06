@@ -1,6 +1,6 @@
 ---
 layout: default
-#title: Home
+title: Home
 permalink: /
 ---
 
@@ -19,13 +19,13 @@ permalink: /
 
   <div>
   <p>
-    Hey, my name is <a href="#" onclick='document.querySelector("#pronunciation-audio").play(); return false;' onmouseover='document.querySelector("#pronunciation-audio").play()' onmouseout='document.querySelector("#pronunciation-audio").pause(); document.querySelector("#pronunciation-audio").currentTime=0; '>Chè Nxusani <svg width="16" height="16" viewBox="0 0 32 32"><use xlink:href="#sound-icon"></use></svg></a>. I'm a software developer building applications for the web. I live in Berlin, Germany working as a senior frontend developer at <a href="http://meyermillersmith.com" target="_blank">Meyer Miller Smith</a>. 
+    Hey, my name is <a href="#" class="name-link">Chè Nxusani <svg width="16" height="16" viewBox="0 0 32 32"><use xlink:href="#sound-icon"></use></svg></a>. I'm a software developer building applications for the web. I live in Berlin, Germany working as a senior frontend developer at <a href="http://meyermillersmith.com" target="_blank">Meyer Miller Smith</a>. 
   </p>
   <p>I specialize in frontend application architecture, having successfully built several large, scalable, enterprise grade web applications.</p>
   <p>
-    I'm also pretty active on <a href="http://codepen.io/code_dependant" target="_blank">Codepen</a>, experimenting with interaction design, pushing the limits of CSS; HTML and Javascript.
+    I'm also pretty active on <a href="http://codepen.io/code_dependant" target="_blank">Codepen</a> where I experiment with interaction design, pushing the limits of CSS; HTML and Javascript.
   </p>
-  <p>Currently building <a href="http://zuio.tv" target="_blank">Zuio.tv</a>, a video platform for up-and-coming presenters, by Axel Springer.</p>
+  <p>Currently, I'm building <a href="http://zuio.tv" target="_blank">Zuio.tv</a>, a video platform for up-and-coming TV presenters in Germany, commissioned by Axel Springer.</p>
   <p>
     I'm super friendly, feel free to <a href="http://www.twitter.com/code_dependant" target="_blank">say hi</a> anytime.
   </p>
@@ -61,10 +61,23 @@ permalink: /
 </div>
 
 <audio id="pronunciation-audio" preload="auto">
-  <!-- <source src="horse.ogg" type="audio/ogg"> -->
-  <source src="/sounds/sound.wav" type="audio/wav">
+  <source src="/sounds/chenxusani.mp3" type="audio/mp3">
 </audio>
 
+<script>
+nameLink = document.querySelector(".name-link");
+audioElement = document.querySelector("#pronunciation-audio");
+nameLink.onclick = function(){
+  audioElement.play();
+}
 
+nameLink.onmouseover = function(){
+  audioElement.play()
+}
+nameLink.onmouseout = function(){
+  audioElement.pause(); 
+  audioElement.currentTime = 0;
+}
+</script>
 
 
