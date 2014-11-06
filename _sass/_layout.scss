@@ -11,13 +11,13 @@
 .site-header {
     border-top: 5px solid $grey-color-dark;
     // border-bottom: 1px solid $grey-color-light;
-    min-height: 56px;
+    // min-height: 56px;
 
     // Positioning context for the mobile navigation icon
     position: relative;
 
     padding-top: 30px;
-    padding-bottom: 50px;
+    // padding-bottom: 50px;
 
 }
 
@@ -192,7 +192,7 @@
  * Page content
  */
 .page-content {
-    padding: $spacing-unit 0;
+    margin-bottom: $spacing-unit 0;
 }
 
 .page-heading {
@@ -230,7 +230,7 @@
 
 .post-title {
     font-size:      61px;
-    margin-bottom:  50px;
+    margin:         1em 0;
     letter-spacing: -2px;
     word-spacing:   2px;
     line-height:    1.2;
