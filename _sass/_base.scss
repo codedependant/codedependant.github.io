@@ -183,10 +183,14 @@ a{
         opacity: 0;
         content: attr(data-tooltip);
         position: absolute;
-        top: 0;
-        left: 150%;
-        width: 150px;
-        color: $accent-color;
+        bottom: 0;
+        left: 0;
+        width: 15em;
+        color: white;
+        background: indianred;
+        transform: translateY(-1.5rem);
+        padding: .5em 1em;
+        font-size: .6em;
     }
     &:hover {
         &:after {
