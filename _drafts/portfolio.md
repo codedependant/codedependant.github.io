@@ -1,7 +1,6 @@
 ---
 layout: default
 title: Portfolio
-permalink: /portfolio/
 ---
 <header class="post-header">
   <h1 class="post-title">{{ page.title }}</h1>

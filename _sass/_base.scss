@@ -101,6 +101,8 @@ li {
  */
 h1, h2, h3, h4, h5, h6 {
     font-weight: 400;
+    font-family: $header-font-family;
+    margin-top: 2em;
 }
 
 
@@ -187,7 +189,7 @@ a{
         left: 0;
         width: 15em;
         color: white;
-        background: indianred;
+        background: $text-color;
         transform: translateY(-1.5rem);
         padding: .5em 1em;
         font-size: .6em;
@@ -203,6 +205,7 @@ a{
 hr {
     border-top: 1px solid $grey-color-light;
 }
+
 
 /**
  * Wrapper

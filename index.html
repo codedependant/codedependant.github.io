@@ -8,7 +8,7 @@ permalink: /
 
   <header class="page-header">
     <!-- <p class="post-meta">{{ page.date | date: "%b %-d, %Y" }}{% if page.author %} • {{ page.author }}{% endif %}{% if page.meta %} • {{ page.meta }}{% endif %}</p> -->
-    <h1 class="post-title">Building useful things with awesome people.</h1>
+    <h1 class="post-title">Building useful things, with awesome people.</h1>
   </header>
 
   <svg style="display: none;">
@@ -19,7 +19,7 @@ permalink: /
 
   <div>
   <p>
-    Hey, my name is <a href="#" class="name-link" data-tooltip="Goodluck pronouncing that...">Chè Nxusani <svg width="16" height="16" viewBox="0 0 32 32"><use xlink:href="#sound-icon"></use></svg></a>. I'm a software developer building applications for the web. I live in Berlin, Germany working as a senior frontend developer at <a href="http://meyermillersmith.com" target="_blank">Meyer Miller Smith</a>. 
+    Hey, my name is <a href="{{ site.baseurl }}/" class="name-link" data-tooltip="Goodluck pronouncing that...">Chè Nxusani</a>. I'm a freelance software developer, living in Berlin, building applications for the web. I've had the pleasure of working with <a href="http://meyermillersmith.com" target="_blank">Meyer Miller Smith</a> and <a href="http://is.co.za" target="_blank">Internet Solutions</a> on projects for Axel Springer, Red Bull, Amer Sports and Dimension Data.
   </p>
   <p>I specialize in frontend application architecture, having successfully built several large, scalable, enterprise grade web applications.</p>
   <p>
@@ -59,25 +59,3 @@ permalink: /
   <!-- <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p> -->
 
 </div>
-
-<audio id="pronunciation-audio" preload="auto">
-  <source src="/sounds/chenxusani.mp3" type="audio/mp3">
-</audio>
-
-<script>
-nameLink = document.querySelector(".name-link");
-audioElement = document.querySelector("#pronunciation-audio");
-nameLink.onclick = function(){
-  audioElement.play();
-}
-
-nameLink.onmouseover = function(){
-  audioElement.play()
-}
-nameLink.onmouseout = function(){
-  audioElement.pause(); 
-  audioElement.currentTime = 0;
-}
-</script>
-
-

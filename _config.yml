@@ -2,7 +2,7 @@
 title: Chè Nxusani
 email: che.nxusani@gmail.com
 description: > # this means to ignore newlines until "baseurl:"
-  Hey, I'm Chè Nxusani, a software developer building applications for the web. Che Nxusani. 
+  Hey, I'm Chè Nxusani, a software developer building applications for the web. 
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "http://chenxusani.com" # the base hostname & protocol for your site
 twitter_username: code_dependant

@@ -9,7 +9,7 @@
  * Site header
  */
 .site-header {
-    border-top: 5px solid $grey-color-dark;
+    // border-top: 5px solid $grey-color-dark;
     // border-bottom: 1px solid $grey-color-light;
     // min-height: 56px;
 
@@ -120,6 +120,7 @@
 
 .footer-image {
     border-radius: 2px;
+    max-width: 4rem;
 }
 .footer-text
 {
@@ -178,6 +179,8 @@
 //     }
 // }
 
+
+
 @include media-query($on-palm) {
     .footer-col {
         float: none;
@@ -197,6 +200,7 @@
 
 .page-heading {
     font-size: 32px;
+    margin-bottom: 2em;
     // margin-bottom: 16px;
 }
 
@@ -233,9 +237,9 @@
     margin:         1em 0;
     letter-spacing: -2px;
     word-spacing:   2px;
-    line-height:    1.2;
-
-
+    line-height:    1;
+    font-family:    $header-font-family;
+    font-weight:    900;
     @include media-query($on-laptop) {
         font-size: 46px;
     }

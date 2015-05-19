@@ -3,19 +3,22 @@
 ---
 @charset "utf-8";
 
-@import url(http://fonts.googleapis.com/css?family=Merriweather:400,900);
 
+// @import url(http://fonts.googleapis.com/css?family=Vollkorn:400,700);
 
 // Our variables
-$base-font-family: 'Merriweather', Helvetica, Arial, sans-serif;
-$base-font-size:   17px;
+$base-font-family: 'Brandon', serif;
+$base-font-size:   16px;
 $small-font-size:  $base-font-size * 0.875;
-$base-line-height: 1.52;
+$base-line-height: 1.4;
+
+$header-font-family: 'Gotham', serif;
+
 
 $spacing-unit:     30px;
 
-$text-color:       #4e4e4e;
-$background-color: #F8F8F8;
+$text-color:       #545454;
+$background-color: white;
 $brand-color:      #2a7ae2;
 
 $grey-color:       #828282;
@@ -46,5 +49,6 @@ $accent-color: indianred;
 @import
         "base",
         "layout",
-        "syntax-highlighting"
+        "syntax-highlighting",
+        "fonts"
 ;
