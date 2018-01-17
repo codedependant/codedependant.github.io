@@ -140,7 +140,6 @@
 
 .footer-col-wrapper {
     font-size: 15px;
-    color: $grey-color;
     margin-left: -$spacing-unit / 2;
     @extend %clearfix;
 }
@@ -239,7 +238,7 @@
     word-spacing:   2px;
     line-height:    1;
     font-family:    $header-font-family;
-    font-weight:    900;
+
     @include media-query($on-laptop) {
         font-size: 46px;
     }
@@ -277,4 +276,8 @@
             font-size: 18px;
         }
     }
+}
+
+.home {
+  margin-bottom: 60px;
 }
