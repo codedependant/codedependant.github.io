@@ -1,18 +1,30 @@
 <!doctype html>
-<html>
+<html lang="en" class="relative min-h-full">
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width initial-scale=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 
     <title>Home | Chè Nxusani</title>
     <meta
       name="description"
-      content="Hey, I'm Chè Nxusani, a principal software engineer and technical leader who builds useful products and effective teams.
-"
+      content="Hey, I'm Chè Nxusani, a principal software engineer and technical leader who builds useful products and effective teams."
     />
 
     <link rel="stylesheet" href="main.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: ["Brandon", "serif"],
+              display: ["Gotham", "serif"],
+            },
+          },
+        },
+      };
+    </script>
     <link rel="canonical" href="http://chenxusani.com/" />
     <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
     <script>
@@ -41,14 +53,32 @@
     </script>
   </head>
 
-  <body>
-    <header class="site-header">
-      <div class="wrapper">
-        <a class="site-title" href="/">Chè Nxusani</a>
+  <body
+    class="mb-[167px] bg-white font-sans text-base font-normal leading-[1.6] text-[#4d4d4d] antialiased max-[600px]:mb-[240px]"
+  >
+    <header class="relative pt-[30px]">
+      <div
+        class="mx-auto max-w-[740px] px-[30px] after:table after:clear-both after:content-[''] max-[800px]:max-w-[570px] max-[800px]:px-[15px]"
+      >
+        <a
+          class="float-left mb-0 leading-[1.6] tracking-[-1px] text-[#4d4d4d] hover:text-[#4d4d4d] hover:underline visited:text-[#4d4d4d]"
+          href="/"
+        >
+          Chè Nxusani
+        </a>
 
-        <nav class="site-nav">
-          <a href="#" class="menu-icon">
-            <svg viewBox="0 0 18 15">
+        <nav
+          class="group float-right text-right text-sm leading-none max-[600px]:absolute max-[600px]:right-[30px] max-[600px]:top-[22px] max-[600px]:rounded-[5px] max-[600px]:border max-[600px]:border-[#E7E7E7] max-[600px]:bg-white"
+        >
+          <a
+            href="#"
+            class="hidden h-[34px] w-9 pt-2.5 text-center leading-none max-[600px]:float-right max-[600px]:block"
+          >
+            <svg
+              class="inline-block h-[15px] w-[18px] align-middle"
+              viewBox="0 0 18 15"
+              aria-hidden="true"
+            >
               <path
                 fill="#424242"
                 d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.031C17.335,0,18,0.665,18,1.484L18,1.484z"
@@ -64,24 +94,29 @@
             </svg>
           </a>
 
-          <div class="trigger">
-            <!-- <a class="page-link" href="/">Home</a> -->
+          <div
+            class="max-[600px]:hidden max-[600px]:clear-both max-[600px]:pb-[5px] max-[600px]:group-hover:block"
+          >
+            <!-- <a class="block px-2.5 py-[5px] leading-[1.6] text-[#4d4d4d]" href="/">Home</a> -->
           </div>
         </nav>
       </div>
     </header>
 
-    <div class="page-content">
-      <div class="wrapper">
-        <div class="home">
-          <header class="page-header">
-            <!-- <p class="post-meta"></p> -->
-            <h1 class="post-title">
+    <div>
+      <div
+        class="mx-auto max-w-[740px] px-[30px] after:table after:clear-both after:content-[''] max-[800px]:max-w-[570px] max-[800px]:px-[15px]"
+      >
+        <div class="mb-[60px]">
+          <header>
+            <h1
+              class="my-[1em] font-display text-[62px] font-normal leading-none tracking-[-2px] text-[#4d4d4d] [word-spacing:2px] max-[800px]:text-[46px]"
+            >
               Building useful products and effective teams
             </h1>
           </header>
 
-          <div>
+          <div class="space-y-[15px]">
             <p>
               Hey there, my name is <b>Chè Nxusani</b>. I’m a Principal Software
               Engineer and technical lead based in Cape Town, South Africa,
@@ -94,13 +129,23 @@
 
             <p>
               My recent work has focused on AI-driven healthcare and education
-              products at <a href="https://www.elsevier.com/">Elsevier</a> and
-              <a href="https://www.osmosis.org/">Osmosis</a>, including the
-              integration of RAG based AI workflows and agents to support
-              semantic search, content recommendation, and workflow automation.
-              I’ve led both B2C and B2B engineering teams, with a strong
-              emphasis on systems design, data modeling, developer productivity,
-              mentorship, ethical AI, and privacy-aware implementation.
+              products at
+              <a
+                class="text-[#cd5c5c] hover:text-[#4d4d4d] hover:underline visited:text-[#cd5c5c]"
+                href="https://www.elsevier.com/"
+                >Elsevier</a
+              >
+              and
+              <a
+                class="text-[#cd5c5c] hover:text-[#4d4d4d] hover:underline visited:text-[#cd5c5c]"
+                href="https://www.osmosis.org/"
+                >Osmosis</a
+              >, including the integration of RAG based AI workflows and agents
+              to support semantic search, content recommendation, and workflow
+              automation. I’ve led both B2C and B2B engineering teams, with a
+              strong emphasis on systems design, data modeling, developer
+              productivity, mentorship, ethical AI, and privacy-aware
+              implementation.
             </p>
 
             <p>
@@ -108,8 +153,16 @@
               aviation, real estate, telecommunications, advertising, sports,
               and enterprise software, from large-scale enterprise projects to
               focused product work with companies such as Victor,
-              <a href="http://property.works">Property.Works</a>, and
-              <a href="http://enviolo.com">enviolo</a>.
+              <a
+                class="text-[#cd5c5c] hover:text-[#4d4d4d] hover:underline visited:text-[#cd5c5c]"
+                href="http://property.works"
+                >Property.Works</a
+              >, and
+              <a
+                class="text-[#cd5c5c] hover:text-[#4d4d4d] hover:underline visited:text-[#cd5c5c]"
+                href="http://enviolo.com"
+                >enviolo</a
+              >.
             </p>
 
             <p>
@@ -118,87 +171,112 @@
               knowledge sharing, and helping teams adopt better tools and
               practices. If you’d like to chat or meet up, don’t hesitate to get
               hold of me at
-              <a href="mailto:che.nxusani@gmail.com">che.nxusani@gmail.com</a>
-              or on <a href="https://twitter.com/code_dependant">Twitter</a>.
+              <a
+                class="text-[#cd5c5c] hover:text-[#4d4d4d] hover:underline visited:text-[#cd5c5c]"
+                href="mailto:che.nxusani@gmail.com"
+                >che.nxusani@gmail.com</a
+              >
+              or on
+              <a
+                class="text-[#cd5c5c] hover:text-[#4d4d4d] hover:underline visited:text-[#cd5c5c]"
+                href="https://www.linkedin.com/in/ch%C3%A8-nxusani-29476051/"
+                >LinkedIn</a
+              >
+              or
+              <a
+                class="text-[#cd5c5c] hover:text-[#4d4d4d] hover:underline visited:text-[#cd5c5c]"
+                href="https://twitter.com/code_dependant"
+                >Twitter</a
+              >.
             </p>
           </div>
-
-          <!--   <h1 class="page-heading">Latest Post</h1>
-  <ul class="post-list">
-    
-  </ul>
-  <h1 class="page-heading">Latest Project</h1>
-  <ul class="post-list">
-    
-      <li>
-        <h2>
-          <a class="post-link" href="http://zuio.tv">Zuio.tv</a>
-        </h2>
-        <span>A video platform built for Axel Springer to allow up and coming presenters showcase their videos.</span>
-      </li>
-    
-  </ul>
- -->
-          <!-- <p class="rss-subscribe">subscribe <a href="/feed.xml">via RSS</a></p> -->
         </div>
       </div>
     </div>
 
-    <footer class="site-footer">
-      <div class="wrapper">
-        <!-- <h2 class="footer-heading">Chè Nxusani</h2> -->
-
-        <div class="footer-col-wrapper">
-          <!--
-      <div class="footer-col  footer-col-1">
-        <ul class="contact-list">
-          <li>Chè Nxusani</li>
-          <li><a href="mailto:che.nxusani@gmail.com">che.nxusani@gmail.com</a></li>
-        </ul>
-      </div>
-       -->
-          <!-- <div class="footer-col  footer-col-1">
-        <img class="footer-image" src="images/me1.jpg" />
-      </div> -->
-          <div class="footer-col footer-col-3">
-            <p class="footer-text">
+    <footer class="absolute bottom-0 w-full">
+      <div
+        class="mx-auto max-w-[740px] border-t border-[#E7E7E7] px-[30px] py-[30px] after:table after:clear-both after:content-[''] max-[800px]:max-w-[570px] max-[800px]:px-[15px]"
+      >
+        <div
+          class="-mx-[15px] text-[15px] after:table after:clear-both after:content-['']"
+        >
+          <div
+            class="float-left mb-[15px] w-[calc(55%_-_(30px_/_2))] px-[15px] max-[600px]:float-none max-[600px]:w-[calc(100%_-_(30px_/_2))]"
+          >
+            <p class="m-0 text-sm">
               Hey, I'm Chè Nxusani, a principal software engineer and technical
               leader building useful products and effective teams.
             </p>
-            <ul class="social-media-list">
-              <li>
-                <a href="https://twitter.com/code_dependant" target="_blank">
-                  <span class="icon icon--twitter">
-                    <svg viewBox="0 0 16 16">
+            <ul class="mt-[0.4em] list-none space-x-[0.3em]">
+              <li class="inline-block">
+                <a
+                  class="text-[#cd5c5c] hover:text-[#4d4d4d] hover:underline visited:text-[#cd5c5c]"
+                  href="https://twitter.com/code_dependant"
+                  target="_blank"
+                >
+                  <span class="inline-block text-[#828282]">
+                    <svg
+                      class="inline-block h-5 w-5 align-middle"
+                      viewBox="0 0 16 16"
+                      aria-hidden="true"
+                    >
                       <path
-                        fill="#828282"
-                        d="M15.969,3.058c-0.586,0.26-1.217,0.436-1.878,0.515c0.675-0.405,1.194-1.045,1.438-1.809
-                  c-0.632,0.375-1.332,0.647-2.076,0.793c-0.596-0.636-1.446-1.033-2.387-1.033c-1.806,0-3.27,1.464-3.27,3.27 c0,0.256,0.029,0.506,0.085,0.745C5.163,5.404,2.753,4.102,1.14,2.124C0.859,2.607,0.698,3.168,0.698,3.767 c0,1.134,0.577,2.135,1.455,2.722C1.616,6.472,1.112,6.325,0.671,6.08c0,0.014,0,0.027,0,0.041c0,1.584,1.127,2.906,2.623,3.206 C3.02,9.402,2.731,9.442,2.433,9.442c-0.211,0-0.416-0.021-0.615-0.059c0.416,1.299,1.624,2.245,3.055,2.271 c-1.119,0.877-2.529,1.4-4.061,1.4c-0.264,0-0.524-0.015-0.78-0.046c1.447,0.928,3.166,1.469,5.013,1.469 c6.015,0,9.304-4.983,9.304-9.304c0-0.142-0.003-0.283-0.009-0.423C14.976,4.29,15.531,3.714,15.969,3.058z"
+                        fill="currentColor"
+                        d="M15.969,3.058c-0.586,0.26-1.217,0.436-1.878,0.515c0.675-0.405,1.194-1.045,1.438-1.809 c-0.632,0.375-1.332,0.647-2.076,0.793c-0.596-0.636-1.446-1.033-2.387-1.033c-1.806,0-3.27,1.464-3.27,3.27 c0,0.256,0.029,0.506,0.085,0.745C5.163,5.404,2.753,4.102,1.14,2.124C0.859,2.607,0.698,3.168,0.698,3.767 c0,1.134,0.577,2.135,1.455,2.722C1.616,6.472,1.112,6.325,0.671,6.08c0,0.014,0,0.027,0,0.041c0,1.584,1.127,2.906,2.623,3.206 C3.02,9.402,2.731,9.442,2.433,9.442c-0.211,0-0.416-0.021-0.615-0.059c0.416,1.299,1.624,2.245,3.055,2.271 c-1.119,0.877-2.529,1.4-4.061,1.4c-0.264,0-0.524-0.015-0.78-0.046c1.447,0.928,3.166,1.469,5.013,1.469 c6.015,0,9.304-4.983,9.304-9.304c0-0.142-0.003-0.283-0.009-0.423C14.976,4.29,15.531,3.714,15.969,3.058z"
                       />
                     </svg>
                   </span>
-
-                  <!-- <span class="username">code_dependant</span> -->
                 </a>
               </li>
 
-              <li>
-                <a href="https://github.com/codedependant">
-                  <span class="icon icon--github">
-                    <svg viewBox="0 0 16 16">
+              <li class="inline-block">
+                <a
+                  class="text-[#cd5c5c] hover:text-[#4d4d4d] hover:underline visited:text-[#cd5c5c]"
+                  href="https://www.linkedin.com/in/ch%C3%A8-nxusani-29476051/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="LinkedIn"
+                >
+                  <span class="inline-block text-[#828282]">
+                    <svg
+                      class="inline-block h-5 w-5 align-middle"
+                      viewBox="0 0 16 16"
+                      aria-hidden="true"
+                    >
                       <path
-                        fill="#828282"
+                        fill="currentColor"
+                        d="M14.816,0H1.181C0.529,0,0,0.516,0,1.153v13.693C0,15.483,0.529,16,1.181,16h13.635C15.469,16,16,15.483,16,14.847V1.153C16,0.516,15.469,0,14.816,0z M4.746,13.634H2.373V5.998h2.373V13.634z M3.559,4.956c-0.76,0-1.376-0.616-1.376-1.375s0.616-1.375,1.376-1.375c0.759,0,1.375,0.616,1.375,1.375S4.318,4.956,3.559,4.956z M13.634,13.634h-2.371V9.921c0-0.886-0.016-2.026-1.235-2.026c-1.235,0-1.424,0.965-1.424,1.961v3.778H6.232V5.998h2.276v1.043h0.032c0.317-0.601,1.092-1.235,2.247-1.235c2.403,0,2.847,1.582,2.847,3.64V13.634z"
+                      />
+                    </svg>
+                  </span>
+                </a>
+              </li>
+
+              <li class="inline-block">
+                <a
+                  class="text-[#cd5c5c] hover:text-[#4d4d4d] hover:underline visited:text-[#cd5c5c]"
+                  href="https://github.com/codedependant"
+                >
+                  <span class="inline-block text-[#828282]">
+                    <svg
+                      class="inline-block h-5 w-5 align-middle"
+                      viewBox="0 0 16 16"
+                      aria-hidden="true"
+                    >
+                      <path
+                        fill="currentColor"
                         d="M7.999,0.431c-4.285,0-7.76,3.474-7.76,7.761 c0,3.428,2.223,6.337,5.307,7.363c0.388,0.071,0.53-0.168,0.53-0.374c0-0.184-0.007-0.672-0.01-1.32 c-2.159,0.469-2.614-1.04-2.614-1.04c-0.353-0.896-0.862-1.135-0.862-1.135c-0.705-0.481,0.053-0.472,0.053-0.472 c0.779,0.055,1.189,0.8,1.189,0.8c0.692,1.186,1.816,0.843,2.258,0.645c0.071-0.502,0.271-0.843,0.493-1.037 C4.86,11.425,3.049,10.76,3.049,7.786c0-0.847,0.302-1.54,0.799-2.082C3.768,5.507,3.501,4.718,3.924,3.65 c0,0,0.652-0.209,2.134,0.796C6.677,4.273,7.34,4.187,8,4.184c0.659,0.003,1.323,0.089,1.943,0.261 c1.482-1.004,2.132-0.796,2.132-0.796c0.423,1.068,0.157,1.857,0.077,2.054c0.497,0.542,0.798,1.235,0.798,2.082 c0,2.981-1.814,3.637-3.543,3.829c0.279,0.24,0.527,0.713,0.527,1.437c0,1.037-0.01,1.874-0.01,2.129 c0,0.208,0.14,0.449,0.534,0.373c3.081-1.028,5.302-3.935,5.302-7.362C15.76,3.906,12.285,0.431,7.999,0.431z"
                       />
                     </svg>
                   </span>
-
-                  <!-- <span class="username">codedependant</span> -->
                 </a>
               </li>
             </ul>
           </div>
-          <div class="footer-col footer-col-2"></div>
+          <div
+            class="float-left mb-[15px] px-[15px] max-[600px]:float-none max-[600px]:w-[calc(100%_-_(30px_/_2))]"
+          ></div>
         </div>
       </div>
     </footer>
