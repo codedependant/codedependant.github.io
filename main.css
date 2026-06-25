@@ -1,28 +1,33 @@
 @font-face {
   font-family: Brandon;
+  font-display: swap;
   src: url("/fonts/HVD Fonts - BrandonText-Regular.otf") format("opentype");
 }
 
 @font-face {
   font-family: Brandon;
   font-weight: 900;
+  font-display: swap;
   src: url("/fonts/HVD Fonts - BrandonText-Bold.otf") format("opentype");
 }
 
 @font-face {
   font-family: Gotham;
   font-weight: 800;
+  font-display: swap;
   src: url("/fonts/GothamHTF-Ultra.otf") format("opentype");
 }
 
 @font-face {
   font-family: Gotham;
   font-weight: 500;
+  font-display: swap;
   src: url("/fonts/GothamHTF-Medium.otf") format("opentype");
 }
 
 @font-face {
   font-family: Gotham;
   font-weight: 400;
+  font-display: swap;
   src: url("/fonts/GothamHTF-Book.otf") format("opentype");
 }

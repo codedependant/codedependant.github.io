@@ -18,8 +18,8 @@
         theme: {
           extend: {
             fontFamily: {
-              sans: ["Brandon", "serif"],
-              display: ["Gotham", "serif"],
+              sans: ["Brandon", "Arial", "sans-serif"],
+              display: ["Gotham", "Arial", "sans-serif"],
             },
           },
         },
@@ -54,14 +54,14 @@
   </head>
 
   <body
-    class="mb-[167px] bg-white font-sans text-base font-normal leading-[1.6] text-[#4d4d4d] antialiased max-[600px]:mb-[240px]"
+    class="mb-[167px] bg-white font-sans text-[18px] font-normal leading-[1.7] text-[#333333] antialiased max-[600px]:mb-[240px]"
   >
     <header class="relative pt-[30px]">
       <div
         class="mx-auto max-w-[740px] px-[30px] after:table after:clear-both after:content-[''] max-[800px]:max-w-[570px] max-[800px]:px-[15px]"
       >
         <a
-          class="float-left mb-0 leading-[1.6] tracking-[-1px] text-[#4d4d4d] hover:text-[#4d4d4d] hover:underline visited:text-[#4d4d4d]"
+          class="float-left mb-0 text-[15px] leading-[1.6] text-[#333333] hover:text-[#333333] hover:underline visited:text-[#333333]"
           href="/"
         >
           Chè Nxusani
@@ -103,20 +103,20 @@
       </div>
     </header>
 
-    <div>
+    <main class="pt-10 max-[600px]:pt-8">
       <div
         class="mx-auto max-w-[740px] px-[30px] after:table after:clear-both after:content-[''] max-[800px]:max-w-[570px] max-[800px]:px-[15px]"
       >
-        <div class="mb-[60px]">
+        <div class="mb-[60px] space-y-11">
           <header>
             <h1
-              class="my-[1em] font-display text-[56px] font-normal leading-none tracking-[-2px] text-[#4d4d4d] [word-spacing:2px] max-[800px]:text-[46px] max-[520px]:text-[39px] max-[420px]:text-[34px] max-[380px]:text-[30px]"
+              class="max-w-[700px] font-display text-[52px] font-medium leading-[1.08] text-[#2f2f2f] max-[800px]:text-[44px] max-[520px]:text-[38px] max-[420px]:text-[34px] max-[380px]:text-[30px]"
             >
               Building useful products and effective teams
             </h1>
           </header>
 
-          <div class="space-y-[15px]">
+          <div class="max-w-[680px] space-y-5 text-[18px] leading-[1.72] text-[#333333] max-[520px]:text-[17px]">
             <p>
               Hi, I’m <b>Chè Nxusani</b>, a Principal Software Engineer and
               technical lead based in Cape Town, South Africa.
@@ -146,19 +146,19 @@
             <p>
               If you’d like to chat, reach out to
               <a
-                class="text-[#cd5c5c] hover:text-[#4d4d4d] hover:underline visited:text-[#cd5c5c]"
+                class="text-[#b94f4f] hover:text-[#333333] hover:underline visited:text-[#b94f4f]"
                 href="mailto:che.nxusani@gmail.com"
                 >che.nxusani@gmail.com</a
               >
               or on
               <a
-                class="text-[#cd5c5c] hover:text-[#4d4d4d] hover:underline visited:text-[#cd5c5c]"
+                class="text-[#b94f4f] hover:text-[#333333] hover:underline visited:text-[#b94f4f]"
                 href="https://www.linkedin.com/in/ch%C3%A8-nxusani-29476051/"
                 >LinkedIn</a
               >
               or
               <a
-                class="text-[#cd5c5c] hover:text-[#4d4d4d] hover:underline visited:text-[#cd5c5c]"
+                class="text-[#b94f4f] hover:text-[#333333] hover:underline visited:text-[#b94f4f]"
                 href="https://twitter.com/code_dependant"
                 >Twitter</a
               >.
@@ -166,7 +166,7 @@
           </div>
         </div>
       </div>
-    </div>
+    </main>
 
     <footer class="absolute bottom-0 w-full">
       <div
@@ -176,16 +176,16 @@
           class="-mx-[15px] text-[15px] after:table after:clear-both after:content-['']"
         >
           <div
-            class="float-left mb-[15px] w-[calc(55%_-_(30px_/_2))] px-[15px] max-[600px]:float-none max-[600px]:w-[calc(100%_-_(30px_/_2))]"
+            class="float-left w-[calc(55%_-_(30px_/_2))] space-y-3 px-[15px] max-[600px]:float-none max-[600px]:w-[calc(100%_-_(30px_/_2))]"
           >
             <p class="m-0 text-sm">
               Hi, I'm Chè Nxusani, a Principal Software Engineer and technical
               lead based in Cape Town, South Africa.
             </p>
-            <ul class="mt-[0.4em] list-none space-x-[0.3em]">
+            <ul class="list-none space-x-[0.3em]">
               <li class="inline-block">
                 <a
-                  class="text-[#cd5c5c] hover:text-[#4d4d4d] hover:underline visited:text-[#cd5c5c]"
+                  class="text-[#b94f4f] hover:text-[#333333] hover:underline visited:text-[#b94f4f]"
                   href="https://twitter.com/code_dependant"
                   target="_blank"
                 >
@@ -206,7 +206,7 @@
 
               <li class="inline-block">
                 <a
-                  class="text-[#cd5c5c] hover:text-[#4d4d4d] hover:underline visited:text-[#cd5c5c]"
+                  class="text-[#b94f4f] hover:text-[#333333] hover:underline visited:text-[#b94f4f]"
                   href="https://www.linkedin.com/in/ch%C3%A8-nxusani-29476051/"
                   target="_blank"
                   rel="noopener noreferrer"
@@ -229,7 +229,7 @@
 
               <li class="inline-block">
                 <a
-                  class="text-[#cd5c5c] hover:text-[#4d4d4d] hover:underline visited:text-[#cd5c5c]"
+                  class="text-[#b94f4f] hover:text-[#333333] hover:underline visited:text-[#b94f4f]"
                   href="https://github.com/codedependant"
                 >
                   <span class="inline-block text-[#828282]">
@@ -249,7 +249,7 @@
             </ul>
           </div>
           <div
-            class="float-left mb-[15px] px-[15px] max-[600px]:float-none max-[600px]:w-[calc(100%_-_(30px_/_2))]"
+            class="float-left px-[15px] max-[600px]:float-none max-[600px]:w-[calc(100%_-_(30px_/_2))]"
           ></div>
         </div>
       </div>
